@@ -1,0 +1,823 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Open+Sans:wght@600;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Lato";
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.contener {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header__style {
+  background: #222;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  gap: 859px;
+}
+
+.header {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  display: flex;
+  width: 111px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  width: 32px;
+  height: 29px;
+}
+
+.navigation {
+  display: flex;
+  width: 169px;
+  height: 37px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+
+.count {
+  width: 19px;
+  height: 19px;
+  border-radius: 50px;
+  background-color: #f16d7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main__style {
+  height: 764px;
+  background: #f1e4e6;
+  display: flex;
+  margin-bottom: 65px;
+  position: relative;
+  gap: 63px;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.main__Div {
+  margin-top: 290px;
+}
+
+.main__Text {
+  width: 405px;
+  border-left: 12px solid #f16d7f;
+  color: #222;
+  padding-left: 16px;
+}
+
+.main__Text h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.main__Text h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.span-ColorTop {
+  color: #f16d7f;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 11px;
+  color: #6f6e6e;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu {
+  width: 232px;
+  height: 634px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: -6px 8px 15px 0px #dddada;
+}
+
+.menu-active {
+  width: 126px;
+  margin-left: 32px;
+  margin-top: 32px;
+  position: relative;
+}
+
+.menu-g {
+  margin-bottom: 20px;
+}
+
+.menu-text {
+  color: #f16d7f;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.menu-heading {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.second__container {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__Img {
+  position: relative;
+}
+
+.nav__ImgLarge {
+  position: relative;
+}
+
+.background__Img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav__Text {
+  position: absolute;
+  top: 105px;
+  left: 103px;
+  width: 154px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.span__Color {
+  font-size: 24px;
+  color: #f16d7f;
+}
+
+.large {
+  position: absolute;
+  top: 65px;
+  left: 490px;
+  width: 160px;
+}
+
+.heading h3 {
+  font-size: 30px;
+  text-align: center;
+  flex-direction: column;
+  font-weight: 400;
+  margin-top: 96px;
+}
+
+.heading p {
+  color: #9f9f9f;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.column {
+  flex-direction: column;
+  gap: 45px;
+}
+
+.card {
+  width: 360px;
+  gap: 30px;
+  background: #f8f8f8;
+  position: relative;
+}
+
+.card:hover .card__hover {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.card__hover img {
+  position: relative;
+}
+
+.button-hover {
+  width: 139px;
+  height: 44px;
+  color: #ffffff;
+  position: absolute;
+  top: 188px;
+  left: 110px;
+  background: none;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card__hover {
+  display: none;
+}
+
+.text__Card {
+  padding: 24px 16px;
+}
+.text__Card h4 {
+  font-size: 13px;
+  background: #f8f8f8;
+}
+.text__Card h3 {
+  margin-top: 12px;
+  margin-bottom: 18px;
+  color: #5d5d5d;
+  font-size: 14px;
+  width: 315px;
+  font-weight: 300;
+}
+.text__Card p {
+  color: #f16d7f;
+  font-size: 16px;
+}
+
+.btn {
+  margin-bottom: 93px;
+  width: 212px;
+  height: 48px;
+  border: 1px solid #ff6a6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  color: #f26376;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #f16d7f;
+  color: white;
+}
+
+.order-style {
+  background: #222;
+  height: 341px;
+  display: flex;
+  align-items: center;
+}
+
+.order {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.order h4 {
+  color: #fbfbfb;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+
+.order p {
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  text-align: center;
+}
+
+.subscribe-style {
+  height: 448px;
+  background-image: url(img/fone.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.subscribe {
+  padding-top: 97px;
+  gap: 223px;
+}
+
+.subscribe__photo {
+  text-align: center;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.subscribe__photo h4 {
+  height: 99px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.submit {
+  width: 557px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.submit h3 {
+  font-size: 24px;
+}
+.submit h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  line-height: 153.2%;
+}
+
+.form {
+  width: 356px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.input {
+  text-align: left;
+  padding-left: 22px;
+  width: 256px;
+  height: 49px;
+  background: #e1e1e1;
+  opacity: 0.671;
+  border-radius: 30px 0 0 30px;
+}
+
+.input input {
+  background: #e1e1e1;
+}
+
+.submit-button {
+  width: 100px;
+  background: #f16d7f;
+  color: #fff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+}
+
+.footer-style {
+  height: 79px;
+  background: #222;
+  display: flex;
+  align-items: center;
+}
+
+.footer-style__paragraf {
+  padding-left: 5px;
+  color: #fbfbfb;
+}
+
+.sites {
+  width: 148px;
+  height: 32px;
+  display: flex;
+  gap: 7px;
+}
+
+.sites__logo {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.sites__logo:hover {
+  background: #f16d7f;
+}
+
+.sites__logo:hover path {
+  fill: #ffffff;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .contener {
+    max-width: 768px;
+  }
+
+  .header__style {
+    height: 74px;
+    gap: 424px;
+  }
+
+  .header {
+    max-width: 736px;
+    padding: 19px 32px;
+  }
+
+  .logo {
+    margin-left: 32px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .span-ColorTop {
+    font-size: 24px;
+  }
+
+  .navigation {
+    width: 169px;
+    height: 37px;
+  }
+
+  .main__Image {
+    width: 386px;
+    margin: 0;
+  }
+
+  .main__style {
+    height: 367px;
+    gap: 39px;
+  }
+
+  .main__Div {
+    margin: 0;
+  }
+
+  .main__Text {
+    width: 311px;
+  }
+
+  .main__Text h2 {
+    font-size: 44px;
+  }
+
+  .main__Text h3 {
+    font-size: 24px;
+  }
+
+  main {
+    justify-content: center;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .menu {
+    height: 425px;
+  }
+
+  .menu-active {
+    margin-left: 22px;
+    margin-top: 5px;
+  }
+
+  .menu-g {
+    margin-bottom: 5px;
+  }
+
+  .menu-text {
+    margin-bottom: 5px;
+  }
+
+  .menu-heading {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin-bottom: 110px;
+  }
+
+  .second__container {
+    width: 736px;
+    gap: 16px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav__Img {
+    position: relative;
+    margin: 0;
+    width: 232px;
+    height: 167px;
+  }
+
+  .background__Img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .nav__Text {
+    position: absolute;
+    top: 59px;
+    left: 39px;
+  }
+
+  .large {
+    position: absolute;
+    top: 33px;
+    left: 287px;
+  }
+
+  .heading p {
+    margin-top: 3px;
+    margin-bottom: 72px;
+  }
+
+  .order-column {
+    gap: 48px;
+    flex-direction: column;
+  }
+
+  .card {
+    gap: 16px;
+  }
+
+  .text__Card h3 {
+    margin: 12px 0;
+  }
+
+  .btn {
+    margin-top: 32px;
+    margin-bottom: 70px;
+  }
+
+  .order-style {
+    height: 610px;
+  }
+
+  .subscribe {
+    padding-top: 64px;
+  }
+
+  .subscribe-style {
+    height: 693px;
+    background-image: url(./img/fone_table.png);
+  }
+}
+
+@media (max-width: 767px) {
+  .contener {
+    max-width: 375px;
+  }
+
+  .header__style {
+    height: 74px;
+  }
+
+  .header {
+    padding: 16px 18px;
+  }
+
+  .logo {
+    width: 111px;
+  }
+
+  .navigation {
+    width: 32px;
+    height: 23px;
+  }
+
+  .hiden {
+    display: none;
+  }
+
+  .count {
+    display: none;
+  }
+
+  .span-ColorTop {
+    font-size: 20px;
+  }
+
+  .main__style {
+    height: 363px;
+  }
+
+  .main__Div {
+    margin: 0 auto;
+  }
+
+  .main__Text {
+    width: 263px;
+    padding-left: 15px;
+  }
+
+  .main__Text h2 {
+    font-size: 38px;
+  }
+
+  .main__Text h3 {
+    font-size: 20px;
+  }
+
+  .span__Color {
+    font-size: 24px;
+  }
+  ul {
+    padding-left: 15px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .menu {
+    width: 152px;
+    height: 425px;
+  }
+
+  .menu-active {
+    margin-left: 22px;
+    margin-top: 5px;
+  }
+
+  .menu-g {
+    margin-bottom: 5px;
+  }
+
+  .menu-text {
+    margin-bottom: 5px;
+  }
+
+  .menu-heading {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .second__container {
+    width: 343px;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  nav {
+    margin: 64px auto;
+  }
+
+  .nav__Img img {
+    height: 248px;
+  }
+
+  .nav__ImgLarge img {
+    height: 111px;
+    object-fit: cover;
+  }
+
+  .large {
+    top: 30px;
+    left: 92px;
+  }
+
+  .heading p {
+    margin-top: 3px;
+  }
+
+  .column {
+    gap: 41px;
+  }
+
+  .card {
+    width: 359px;
+    gap: 16px;
+  }
+
+  .text__Card {
+    padding: 25px 28px 20px 17px;
+  }
+
+  .text__Card h3 {
+    margin-top: 13px;
+    margin-bottom: 18px;
+  }
+
+  .btn {
+    margin-bottom: 96px;
+  }
+
+  .order-style {
+    height: 610px;
+  }
+
+  .order-column {
+    gap: 46px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .subscribe {
+    padding-top: 64px;
+  }
+
+  .subscribe-style {
+    height: 550px;
+    background-image: url(./img/fone-mobile.png);
+  }
+
+  .subscribe__photo img {
+    width: 92px;
+    height: 92px;
+  }
+
+  .subscribe__photo h4 {
+    font-size: 18px;
+    height: 73px;
+  }
+
+  .submit {
+    height: 123px;
+  }
+
+  .submit h4 {
+    font-size: 14px;
+  }
+
+  .form {
+    width: 341px;
+  }
+
+  .footer-style {
+    height: 143px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 9px;
+  }
+
+  .footer-style__reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
